@@ -177,6 +177,6 @@ wss.on('connection', function connection(ws) {
     ws.send(JSON.stringify({ type: "CONNECTED", message: "WebSocket connected" }));
 });
 
-server.listen(3001, () => {
+server.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
